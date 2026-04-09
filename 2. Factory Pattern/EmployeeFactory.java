@@ -5,6 +5,7 @@ public class EmployeeFactory{
   public static Employee createEmployee(String empName){
 
     //conditions to create employees based upon input parameters
+    //method is static so that it should be called without creating an instance
     if(empName.trim().equalsIgnoreCase("BACKENDEMPLOYEE")){
       return new BackendEmployee();
     }
